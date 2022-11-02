@@ -2,20 +2,30 @@
 <html>
   <head>
     <style>
-      .item1 { grid-area: header; }
-      .item2 { grid-area: menu; }
-      .item3 { grid-area: main; }
-      .item4 { grid-area: right; }
-      .item5 { grid-area: footer; }
+      .item1 {
+        grid-area: header;
+      }
+      .item2 {
+        grid-area: menu;
+      }
+      .item3 {
+        grid-area: main;
+      }
+      .item4 {
+        grid-area: right;
+      }
+      .item5 {
+        grid-area: footer;
+      }
 
       .grid-container {
         display: grid;
         grid-template-areas:
-          'header header header header header header'
-          'menu main main main right right'
-          'menu footer footer footer footer footer';
+          "header header header header header header"
+          "menu main main main right right"
+          "menu footer footer footer footer footer";
         grid-gap: 10px;
-        background-color: #2196F3;
+        background-color: #2196f3;
         padding: 10px;
       }
 
@@ -37,8 +47,6 @@
         padding: 20px;
         font-size: 30px;
       }
-
-      }
     </style>
     <script src="shifting.js"></script>
   </head>
@@ -49,9 +57,9 @@
 
     <div class="flex-container">
       <button onclick="intervals()">GO!</button>
-      <p id="timeinfo">TIME</p>
+      <p id="timeinfo"></p>
     </div>
-    <div class="grid-container">
+    <div class="grid-container" id="grid">
       <div class="item1">Header</div>
       <div class="item2">Menu</div>
       <div class="item3">Main</div>
